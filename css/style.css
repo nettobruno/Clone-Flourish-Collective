@@ -119,6 +119,10 @@ div.btn a {
     letter-spacing: .2rem;
 }
 
+div.btn a.btn-top:hover {
+    background-color: #c39765;
+}
+
 /* Seção com título e 3 blocos com imagem, título, texto e botão */
 section#info {
     margin-top: 5em;
@@ -174,6 +178,10 @@ div.btn-info a {
     font-size: 1.2rem;
 }
 
+div.btn-info a:hover {
+    background-color: #99a7bd;
+}
+
 /* Seção com imagem a direita e texto */
 section#create {
     min-height: 90vh;
@@ -215,6 +223,10 @@ section#create article p {
 
 section#create article .btn-create {
     margin-top: 3rem;
+}
+
+section#create article .btn-create a:hover {
+    background-color: #c39765;
 }
 
 /* Seção de postagens */
@@ -368,6 +380,9 @@ div.btn-posts a {
     background-color: #9199a5;
 }
 
+div.btn-posts a:hover {
+    background-color: #99a7bd;
+}
 
 /* Seção com imagem a esquerda e input de email */
 section#freeCourse {
@@ -430,6 +445,10 @@ section#freeCourse article button {
     font-family: 'Maven Pro', sans-serif;
 }
 
+section#freeCourse article button:hover {
+    background-color: #c39765;
+}
+
 /* Rodapé da página */
 footer {
     background-color: #9199a5;
@@ -481,6 +500,7 @@ footer ul#icons li {
 
 footer ul#icons li img {
     width: 70%;
+    cursor: pointer;
 }
 
 footer p {
