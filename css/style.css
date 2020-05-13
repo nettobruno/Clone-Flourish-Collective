@@ -1,635 +1,641 @@
 /* Importação de Fontes */
 @font-face {
-    font-family: 'Sacramento';
-    src: url("../fonts/Sacramento/Sacramento-Regular.ttf");
+  font-family: 'Sacramento';
+  src: url("../fonts/Sacramento/Sacramento-Regular.ttf");
 }
 
 @font-face {
-    font-family: 'Nixie One';
-    src: url("../fonts/Nixie_One/NixieOne-Regular.ttf");
+  font-family: 'Nixie One';
+  src: url("../fonts/Nixie_One/NixieOne-Regular.ttf");
 }
 
 @font-face {
-    font-family: 'Josefin Sans';
-    src: url("../fonts/Josefin_Sans/JosefinSans-Light.ttf");
+  font-family: 'Josefin Sans';
+  src: url("../fonts/Josefin_Sans/JosefinSans-Light.ttf");
 }
 
 @font-face {
-    font-family: 'Maven Pro';
-    src: url("../fonts/Maven_Pro/MavenPro-Regular.ttf");
+  font-family: 'Maven Pro';
+  src: url("../fonts/Maven_Pro/MavenPro-Regular.ttf");
 }
 
 
 /* Estilização geral da página */
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 
 /* grid */
 .grid {
-    display: grid;
+  display: grid;
 }
 
-.grid-template-columns-2 {
-    grid-template-columns: 1fr 1fr;
+.grid-template-columns {
+  grid-template-columns: 1fr 1fr;
 }
 
 /* Menu de navegação ao topo da página */
 header#topo {
-    min-height: 20vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 header#topo span {
-    display: none;
+  display: none;
 }
 
 #menu,
 .menu {
-    display: none;
+  display: none;
 }
 
 header#topo nav ul li {
-    display: inline-block;
-    text-decoration: none;
-    padding: 10px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
 }
 
 header#topo nav ul li a {
-    color: #000;
-    text-decoration: none;
-    font-family: 'Nixie One';
-    font-size: 1.2rem;
-    text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
+  font-family: 'Nixie One';
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }
 
 header#topo nav ul li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 header#topo nav ul h1 {
-    font-family: 'Sacramento';
-    font-size: 3rem;
-    color: #a88d6f;
-    position: relative;
-    top: 6px;
+  font-family: 'Sacramento';
+  font-size: 3rem;
+  color: #a88d6f;
+  position: relative;
+  top: 6px;
 }
 
 
 /* Imagem, texto e botão ao topo da página */
 section#inicio {
-    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)), url('../img/topo.jpg');
-    background-size: cover;
-    background-position: center;
-    min-height: 80vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)), url('../img/topo.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 section#inicio h2 {
-    font-family: 'Josefin Sans', sans-serif;
-    line-height: 3.2rem;
-    font-size: 2.8rem;
-    width: 75%;
-    margin: auto;
-    color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 3.2rem;
+  font-size: 2.8rem;
+  width: 75%;
+  margin: auto;
+  color: white;
 }
 
 section#inicio div.btn {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 div.btn a {
-    background-color: #a88d6f;
-    color: white;
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    font-family: 'Maven Pro', sans-serif;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: .2rem;
+  background-color: #a88d6f;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-family: 'Maven Pro', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .2rem;
 }
 
 div.btn a.btn-top:hover {
-    background-color: #c39765;
+  background-color: #c39765;
 }
 
 /* Seção com título e 3 blocos com imagem, título, texto e botão */
 section#info {
-    margin-top: 5em;
-    margin-bottom: 5em;
+  margin-top: 5em;
+  margin-bottom: 5em;
 }
 
 section#info h2 {
-    font-size: 2.5rem;
-    width: 75%;
-    margin: auto;
-    font-family: 'Josefin Sans', sans-serif;
-    text-align: center;
+  font-size: 2.5rem;
+  width: 75%;
+  margin: auto;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
 }
 
 section#info div.bloco-info {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 40vh;
-    width: 80%;
-    margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 40vh;
+  width: 80%;
+  margin: auto;
 }
 
 section#info div.bloco-info article {
-    width: 90%;
-    text-align: center;
-    margin: auto;
+  width: 90%;
+  text-align: center;
+  margin: auto;
 }
 
 section#info article img {
-    width: 30%;
-    padding: 20px;
+  width: 30%;
+  padding: 20px;
 }
 
 section#info article h3 {
-    font-family: 'Sacramento', cursive;
-    font-weight: 500;
-    font-size: 3rem;
-    color: #494646;
+  font-family: 'Sacramento', cursive;
+  font-weight: 500;
+  font-size: 3rem;
+  color: #494646;
 }
 
 section#info article p {
-    font-family: 'Maven Pro', sans-serif;
-    font-size: 1.5rem;
-    color: #494646;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 1.5rem;
+  color: #494646;
 }
 
 div.btn-info {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 div.btn-info a {
-    background-color: #9199a5;
-    font-size: 1.2rem;
+  background-color: #9199a5;
+  font-size: 1.2rem;
 }
 
 div.btn-info a:hover {
-    background-color: #99a7bd;
+  background-color: #99a7bd;
 }
 
 /* Seção com imagem a direita e texto */
 section#create {
-    min-height: 90vh;
-    background-color: #f6f5f1;
+  min-height: 90vh;
+  background-color: #f6f5f1;
 }
 
 section#create div#img {
-    background: url('../img/mulher-computador.jpg');
-    background-position: center bottom;
-    background-size: cover;
+  background: url('../img/mulher-computador.jpg');
+  background-position: center bottom;
+  background-size: cover;
 }
 
 section#create article {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 70%;
-    margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin: auto;
 }
 
 section#create article h4 {
-    font-family: 'Sacramento';
-    font-weight: 500;
-    font-size: 3em;
+  font-family: 'Sacramento';
+  font-weight: 500;
+  font-size: 3em;
 }
 
 section#create article h3 {
-    font-family: 'Maven Pro', sans-serif;
-    font-size: 2em;
-    margin-bottom: 1.5rem;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 2em;
+  margin-bottom: 1.5rem;
 }
 
 section#create article p {
-    font-family: 'Maven Pro', sans-serif;
-    font-size: 1.2em;
-    text-align: justify;
-    margin-bottom: 10px;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 1.2em;
+  text-align: justify;
+  margin-bottom: 10px;
 }
 
 section#create article .btn-create {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 section#create article .btn-create a:hover {
-    background-color: #c39765;
+  background-color: #c39765;
 }
 
 /* Seção de postagens */
 section#popular {
-    margin-top: 5em;
-    margin-bottom: 5em;
-    min-height: 90vh;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  min-height: 90vh;
 }
 
 section#popular h4 {
-    font-family: 'Sacramento';
-    font-weight: 400;
-    font-size: 3em;
-    margin-bottom: 1.5rem;
-    text-align: center;
+  font-family: 'Sacramento';
+  font-weight: 400;
+  font-size: 3em;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 section#popular article#post div.postTrabalho {
-    grid-area: 'trabalho';
+  grid-area: 'trabalho';
 }
 
 section#popular article#post div.postCacto {
-    grid-area: 'cacto';
+  grid-area: 'cacto';
 }
 
 section#popular article#post div.postInstagram {
-    grid-area: 'instagram';
+  grid-area: 'instagram';
 }
 
 section#popular article#post div.postDecoracao {
-    grid-area: 'decoracao';
+  grid-area: 'decoracao';
 }
 
 section#popular article#post {
-    width: 80%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 40vh;
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 40vh;
 }
 
 section#popular article#post div.posts {
-    margin: 1em;
-    text-align: center;
+  margin: 1em;
+  text-align: center;
 }
 
 section#popular article#post div.posts div.texts {
-    min-height: 20vh;
-    padding: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  min-height: 20vh;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 section#popular article#post div.posts div.texts h5 {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: .8rem;
-    text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: .8rem;
+  text-transform: uppercase;
 }
 
 section#popular article#post div.posts div.textTrabalho,
 section#popular article#post div.posts div.textInstagram {
-    background-color: #f6f5f1;
+  background-color: #f6f5f1;
 }
 
 section#popular article#post div.posts div.textCacto {
-    background-color: #a88d6f;
-    color: #fff;
+  background-color: #a88d6f;
+  color: #fff;
 }
 
 section#popular article#post div.posts div.textDecoracao {
-    background-color: #9199a5;
-    color: #fff;
+  background-color: #9199a5;
+  color: #fff;
 }
 
 section#popular article#post div.posts div.textTrabalho h5,
 section#popular article#post div.posts div.textInstagram h5 {
-    border-bottom: 1px solid #a88d6f;
-    width: 40%;
-    margin: auto;
+  border-bottom: 1px solid #a88d6f;
+  width: 40%;
+  margin: auto;
 }
 
 section#popular article#post div.posts div.textCacto h5,
 section#popular article#post div.posts div.textDecoracao h5 {
-    border-bottom: 1px solid #fff;
-    width: 40%;
-    margin: auto;
+  border-bottom: 1px solid #fff;
+  width: 40%;
+  margin: auto;
 }
 
 section#popular article#post div.posts div.texts p {
-    margin-top: 1rem;
-    font-family: 'Maven Pro', sans-serif;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    line-height: 1.5rem;
+  margin-top: 1rem;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  line-height: 1.5rem;
 }
 
 section#popular article#post div.posts div.imgPadrao {
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
-    min-height: 75%;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  min-height: 75%;
 }
 
 section#popular article#post div.trabalho {
-    background: url('../img/trabalho.jpg');
+  background: url('../img/trabalho.jpg');
 }
 
 section#popular article#post div.cacto {
-    background: url('../img/cacto.jpg');
+  background: url('../img/cacto.jpg');
 }
 
 section#popular article#post div.instagram {
-    background: url('../img/instagram.jpg');
+  background: url('../img/instagram.jpg');
 }
 
 section#popular article#post div.decoracao {
-    background: url('../img/decoracao.jpg');
+  background: url('../img/decoracao.jpg');
 }
 
 section#popular article#post div.link {
-    padding: 5px;
+  padding: 5px;
 }
 
 section#popular article#post div.link a {
-    color: white;
-    text-decoration: none;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
 }
 
 section#popular article#post div.linkTrabalho,
 section#popular article#post div.linkInstagram {
-    background-color: #9199a5;
+  background-color: #9199a5;
 }
 
 section#popular article#post div.linkCacto {
-    background-color: rgb(59, 53, 53);
+  background-color: rgb(59, 53, 53);
 }
 
 section#popular article#post div.linkDecoracao {
-    background-color: #a88d6f;
+  background-color: #a88d6f;
 }
 
 div.btn-posts {
-    margin-top: 15%;
-    text-align: center;
+  margin-top: 15%;
+  text-align: center;
 }
 
 div.btn-posts a {
-    background-color: #9199a5;
+  background-color: #9199a5;
 }
 
 div.btn-posts a:hover {
-    background-color: #99a7bd;
+  background-color: #99a7bd;
 }
 
 /* Seção com imagem a esquerda e input de email */
 section#freeCourse {
-    min-height: 90vh;
-    background-color: #f6f5f1;
+  min-height: 90vh;
+  background-color: #f6f5f1;
 }
 
 section#freeCourse div#imgFreeCourse {
-    background: url('../img/cacto2.jpg');
-    background-position: right bottom;
-    background-size: cover;
+  background: url('../img/cacto2.jpg');
+  background-position: right bottom;
+  background-size: cover;
 }
 
 section#freeCourse article {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 70%;
-    margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin: auto;
 }
 
 section#freeCourse article h4 {
-    font-family: 'Sacramento';
-    font-weight: 500;
-    font-size: 3em;
+  font-family: 'Sacramento';
+  font-weight: 500;
+  font-size: 3em;
 }
 
 section#freeCourse article h3 {
-    font-family: 'Maven Pro', sans-serif;
-    font-size: 2em;
-    margin-bottom: 1.5rem;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 2em;
+  margin-bottom: 1.5rem;
 }
 
 section#freeCourse article p {
-    font-family: 'Maven Pro', sans-serif;
-    font-size: 1.2em;
-    text-align: justify;
-    margin-bottom: 10px;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 1.2em;
+  text-align: justify;
+  margin-bottom: 10px;
 }
 
 section#freeCourse div#enviar {
-    flex-direction: column;
-    margin-top: 10%;
+  flex-direction: column;
+  margin-top: 10%;
 }
 
 section#freeCourse article input {
-    padding: 5px 10px;
-    font-size: 1.2rem;
-    font-family: 'Maven Pro', sans-serif;
-    width: 50%;
-    outline: none;
-    color: #929292;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  font-family: 'Maven Pro', sans-serif;
+  width: 50%;
+  outline: none;
+  color: #929292;
 }
 
 section#freeCourse article button {
-    text-transform: uppercase;
-    padding: 5px 10px;
-    color: white;
-    background-color: #a88d6f;
-    font-size: 1.2rem;
-    letter-spacing: .2rem;
-    font-family: 'Maven Pro', sans-serif;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  color: white;
+  background-color: #a88d6f;
+  font-size: 1.2rem;
+  letter-spacing: .2rem;
+  font-family: 'Maven Pro', sans-serif;
 }
 
 section#freeCourse article button:hover {
-    background-color: #c39765;
+  background-color: #c39765;
 }
 
 /* Rodapé da página */
 footer {
-    background-color: #9199a5;
-    min-height: 60vh;
-    padding: 2em;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  background-color: #9199a5;
+  min-height: 60vh;
+  padding: 2em;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 footer h2 {
-    font-family: 'Sacramento', cursive;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 3.5rem;
+  font-family: 'Sacramento', cursive;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 3.5rem;
 }
 
 footer nav ul {
-    margin-top: 1em;
-    margin-bottom: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 footer nav ul li {
-    display: inline-block;
-    text-decoration: none;
-    padding: 10px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
 }
 
 footer nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-family: 'Maven Pro';
-    font-size: 1rem;
-    text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  font-family: 'Maven Pro';
+  font-size: 1rem;
+  text-transform: uppercase;
 }
 
 footer nav ul li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 footer ul#icons li {
-    display: inline-block;
-    text-decoration: none;
-    padding: 10px;
-    margin-bottom: 1em;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  margin-bottom: 1em;
 }
 
 footer ul#icons li img {
-    width: 70%;
-    cursor: pointer;
+  width: 70%;
+  cursor: pointer;
 }
 
 footer p {
-    font-family: 'Josefin Sans';
-    font-size: 1.4rem;
+  font-family: 'Josefin Sans';
+  font-size: 1.4rem;
 }
 
 footer p a {
-    color: white;
+  color: white;
 }
 
 
 /* MEDIA QUERIES */
 @media(max-width: 600px) {
 
-    /* Menu hamburguer ao topo da página */
-    header#topo {
-        min-height: 7vh;
-        top: 0;
-        left: 0;
-    }
+  /* Menu hamburguer ao topo da página */
+  header#topo {
+    min-height: 7vh;
+    top: 0;
+    left: 0;
+  }
 
-    header#topo span {
-        display: block;
-        font-family: 'Sacramento';
-        font-size: 2.5rem;
-        color: #a88d6f;
-        position: fixed;
-        top: .2em;
-        margin-bottom: 2em;
-    }
+  header#topo span {
+    display: block;
+    font-family: 'Sacramento';
+    font-size: 2.5rem;
+    color: #a88d6f;
+    position: fixed;
+    top: .2em;
+    margin-bottom: 2em;
+  }
 
-    header#topo nav {
-        margin-top: 2em;
-        margin-bottom: 2em;
-        display: none;
-    }
+  header#topo nav {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: none;
+  }
 
-    #menu:checked~nav {
-        display: block;
-    }
+  #menu:checked~nav {
+    display: block;
+  }
 
-    .menu {
-        position: fixed;
-        display: block;
-        width: 3rem;
-        padding: 1em;
-        left: 0;
-        top: .8em;
-        color: #a88d6f;
-    }
+  .menu {
+    position: fixed;
+    display: block;
+    width: 3rem;
+    padding: 1em;
+    left: 0;
+    top: .8em;
+    color: #a88d6f;
+  }
 
-    header#topo nav ul {
-        margin-top: 2em;
-        padding: 0;
-    }
+  header#topo nav ul {
+    margin-top: 2em;
+    padding: 0;
+  }
 
-    header#topo nav ul li {
-        display: block;
-        padding: 10px 0px;
-    }
+  header#topo nav ul li {
+    display: block;
+    padding: 10px 0px;
+  }
 
-    header#topo nav ul li a {
-        width: 100%;
-        float: left;
-        text-align: center;
-        padding: 10px;
-    }
+  header#topo nav ul li a {
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 10px;
+  }
 
-    header#topo nav ul h1 {
-        display: none;
-    }
+  header#topo nav ul h1 {
+    display: none;
+  }
 
-    /* Titulo ao topo da página */
-    section#inicio h2 {
-        width: 100%;
-        line-height: 3rem;
-    }
+  /* Titulo ao topo da página */
+  section#inicio h2 {
+    width: 100%;
+    line-height: 3rem;
+  }
 
-    section#inicio div.btn a {
-        padding: 10px 15px;
-        font-size: 1.2rem;
-        display: inline-block;
-        width: 90%;
-        letter-spacing: .1rem;
-    }
+  section#inicio div.btn a {
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    display: inline-block;
+    width: 90%;
+    letter-spacing: .1rem;
+  }
 
-    /* Seção com título e 3 blocos com imagem, título, texto e botão */
-    section#info h2 {
-        width: 90%;
-    }
+  /* Seção com título e 3 blocos com imagem, título, texto e botão */
+  section#info h2 {
+    width: 90%;
+  }
 
-    section#info div.bloco-info {
-        grid-template-columns: 100%;
-        grid-template-rows: 40vh 40vh 40vh;
-        grid-row-gap: 15vh;
-        width: 90%;
-        margin: auto;
-    }
+  section#info div.bloco-info {
+    grid-template-columns: 100%;
+    grid-template-rows: 40vh 40vh 40vh;
+    grid-row-gap: 25vh;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 300px;
+  }
 
-    section#popular article#post {
-        grid-template-columns: 100%;
-        grid-template-rows: 40vh 40vh 40vh 40vh;
-        grid-row-gap: 20vh;
-    }
+  section#popular article#post {
+    grid-template-columns: 100%;
+    grid-template-rows: 40vh 40vh 40vh 40vh;
+    grid-row-gap: 20vh;
+  }
 
-    section#popular article#post div.posts div.texts {
-        min-height: 15vh;
-    }
+  section#popular article#post div.posts div.texts {
+    min-height: 15vh;
+  }
 
-    section#popular article#post div.posts div.imgPadrao {
-        background-size: cover;
-        background-position: center center;
-        width: 100%;
-        min-height: 65%;
-    }
+  section#popular article#post div.posts div.imgPadrao {
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    min-height: 65%;
+  }
 
-    div.btn-posts {
-        margin-top: 35%;
-    }
+  div.btn-posts {
+    margin-top: 35%;
+  }
 
-    footer {
-        min-height: 45vh;
-        padding: 1em;
-    }
+  footer {
+    min-height: 45vh;
+    padding: 1em;
+  }
 
-    footer p {
-        line-height: 1.3em;
-    }
+  footer p {
+    line-height: 1.3em;
+  }
+
+  .grid-template-columns {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
